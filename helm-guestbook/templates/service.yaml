@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ template "helm-guestbook.fullname" . }}
   labels:
-    argo-custom: ignore-sync
+    
     app: {{ template "helm-guestbook.name" . }}
     chart: {{ template "helm-guestbook.chart" . }}
     release: {{ .Release.Name }}
