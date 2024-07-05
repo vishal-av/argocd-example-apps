@@ -34,18 +34,18 @@ spec:
   backoffLimit: 0
 ---
 apiVersion: apps/v1
-kind: ReplicaSet
+kind: Deployment
 metadata:
-  name: frontend
+  name: backend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      tier: frontend
+      tier: backend
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: backend
     spec:
       containers:
         - name: main
