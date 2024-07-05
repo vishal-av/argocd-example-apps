@@ -122,12 +122,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: beckend
+  name: backend
   annotations:
     helm.sh/hook-weight: "2"
 spec:
   selector:
-    tier: beckend
+    tier: backend
   ports:
     - protocol: TCP
       port: 88
