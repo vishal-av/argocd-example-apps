@@ -59,11 +59,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      tier: frontend1
+      tier: frontend
   template:
     metadata:
       labels:
-        tier: frontend1
+        tier: frontend
     spec:
       containers:
         - name: main
@@ -77,11 +77,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      tier: frontend2
+      tier: frontend
   template:
     metadata:
       labels:
-        tier: frontend2
+        tier: frontend
     spec:
       containers:
         - name: main
