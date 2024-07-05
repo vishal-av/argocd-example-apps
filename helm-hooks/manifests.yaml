@@ -95,11 +95,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      tier: frontend
+      tier: frontend2
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: frontend2
     spec:
       containers:
         - name: main
