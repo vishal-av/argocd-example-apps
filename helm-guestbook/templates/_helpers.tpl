@@ -24,7 +24,7 @@ If release name contains chart name it will be used as a full name.
 {{- end -}}
 {{- end -}}
 
-{{- define "helm-guestbook.fullname" -}}
+{{- define "helm-guestbook.fullname2" -}}
   {{- print "mirko-deployment" -}}
 {{- end -}}
 
