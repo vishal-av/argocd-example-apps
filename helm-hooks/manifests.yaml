@@ -52,24 +52,6 @@ spec:
           image: nginx:latest
 ---
 apiVersion: apps/v1
-kind: ReplicaSet
-metadata:
-  name: frontend
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      tier: frontend
-  template:
-    metadata:
-      labels:
-        tier: frontend
-    spec:
-      containers:
-        - name: main
-          image: nginx:latest
----
-apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: frontend1
@@ -77,11 +59,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      tier: frontend
+      tier: frontend1
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: frontend1
     spec:
       containers:
         - name: main
@@ -95,11 +77,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      tier: frontend
+      tier: frontend2
   template:
     metadata:
       labels:
-        tier: frontend
+        tier: frontend2
     spec:
       containers:
         - name: main
