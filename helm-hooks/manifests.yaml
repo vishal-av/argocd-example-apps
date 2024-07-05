@@ -72,6 +72,18 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: backend
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+        - name: main
+          image: nginx:latest
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
   name: frontend2
 spec:
   replicas: 1
