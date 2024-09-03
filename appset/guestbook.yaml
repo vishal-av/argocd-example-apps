@@ -4,7 +4,7 @@ metadata:
   name: guestbook
 spec:
   syncPolicy:
-    preserveResourcesOnDeletion: true
+    preserveResourcesOnDeletion: false
   generators:
     - list:
         elements:
