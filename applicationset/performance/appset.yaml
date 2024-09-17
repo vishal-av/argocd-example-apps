@@ -12,7 +12,7 @@ spec:
           - path: "applicationset/performance/**/config.json"
   template:
     metadata:
-      name: '{{path.basename}}-nginx'
+      name: '{{cluster.namespace}}-nginx'
     spec:
       project: f6bd2309
       source:
