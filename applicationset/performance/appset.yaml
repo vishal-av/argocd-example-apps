@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  namespace: mirko-account-gitopsautomation-ha
+  namespace: mirko-agent-local
   name: nginx-applicationset
 spec:
   generators:
