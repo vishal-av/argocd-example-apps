@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  namespace: mirko-agent-local
+  namespace: mirko-project-qa
   name: nginx-applicationset
 spec:
   generators:
