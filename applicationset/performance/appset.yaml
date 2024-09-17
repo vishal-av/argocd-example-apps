@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
-  namespace: mirko-project-qa
+  namespace: mirko-cbp-test-ha
   name: nginx-applicationset
 spec:
   generators:
