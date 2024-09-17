@@ -17,7 +17,7 @@ spec:
       project: f6bd2309
       source:
         repoURL: https://github.com/mteodor/argocd-example-apps
-        targetRevision:  master
+        targetRevision: HEAD
         path: nginx
         helm:
           valueFiles:
