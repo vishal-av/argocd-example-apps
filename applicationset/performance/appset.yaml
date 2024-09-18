@@ -21,7 +21,7 @@ spec:
         path: nginx
         helm:
           valueFiles:
-            - '{{path}}/values.yaml'
+            - '{{.path.path}}/values.yaml'
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{cluster.namespace}}'
