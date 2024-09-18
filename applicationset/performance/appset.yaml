@@ -9,7 +9,7 @@ spec:
         repoURL: https://github.com/mteodor/argocd-example-apps
         revision: HEAD
         files:
-          - path: "applicationset/performance/**/config.json"
+          - path: "nginx/performance/**/config.json"
   template:
     metadata:
       name: '{{cluster.namespace}}-nginx'
@@ -21,7 +21,7 @@ spec:
         path: nginx
         helm:
           valueFiles:
-            - '../{{path}}/config/values.yaml'
+            - '{{path}}/config/values.yaml'
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{cluster.namespace}}'
