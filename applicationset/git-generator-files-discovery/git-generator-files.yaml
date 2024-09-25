@@ -5,10 +5,10 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/argoproj/applicationset.git
+        repoURL: https://github.com/mteodor/argocd-example-apps.git
         revision: HEAD
         files:
-        - path: "examples/git-generator-files-discovery/cluster-config/**/config.json"
+        - path: "applicationset/git-generator-files-discovery/cluster-config/**/config.json"
   template:
     metadata:
       name: '{{cluster.name}}-guestbook'
@@ -17,7 +17,7 @@ spec:
       source:
         repoURL: https://github.com/argoproj/applicationset.git
         targetRevision: HEAD
-        path: "examples/git-generator-files-discovery/apps/guestbook"
+        path: "applicationset/git-generator-files-discovery/apps/guestbook"
       destination:
         server: https://kubernetes.default.svc
         #server: '{{cluster.address}}'
