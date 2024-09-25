@@ -19,6 +19,5 @@ spec:
         targetRevision: HEAD
         path: "applicationset/git-generator-files-discovery/apps/guestbook"
       destination:
-        server: https://kubernetes.default.svc
         server: '{{cluster.address}}'
         namespace: guestbook
