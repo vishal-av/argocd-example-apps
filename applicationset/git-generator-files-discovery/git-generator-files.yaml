@@ -15,7 +15,7 @@ spec:
     metadata:
       name: '{{cluster.name}}-guestbook'
     spec:
-      project: 579c39e9
+      project: 36bd3131
       source:
         repoURL: https://github.com/argoproj/applicationset.git
         targetRevision: HEAD
